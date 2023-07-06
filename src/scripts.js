@@ -3,6 +3,11 @@ $.lazyLoadXT.updateEvent += ' layoutComplete';
 $(".email-link").attr("href", "mailto:julia.cordeiro2@outlook.com");
 $(".email-link span").html("julia.cordeiro2@outlook.com");
 
+if(Cookies.get('mode') == "dark") {
+	$(".dark-mode-toggle").toggleClass("toggled");
+	$("body").toggleClass("dark-mode");
+}
+
 $(document).ready(function() {
 
 	function getQueryVariable(variable) {
@@ -85,6 +90,10 @@ $(document).ready(function() {
 		$(".dark-mode-toggle").toggleClass("toggled");
 		$("body").toggleClass("dark-mode");
 		$("#mobile-menu").addClass("closed");
+		if (Cookies.get('mode') != "dark")
+			Cookies.set('mode', 'dark');
+		else
+			Cookies.set('mode', 'light');
 	});
 	
 	var $selectedSort = $('#default-sort');

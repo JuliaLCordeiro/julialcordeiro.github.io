@@ -507,7 +507,8 @@ body.dark-mode .item {
     width: calc(100% - 60px);
   }
   #top-bar h1 {
-    line-height: 1.5;
+    line-height: 0.6;
+    font-size: 2rem;
   }
   #top-bar .email-link {
     margin: 0;
@@ -517,12 +518,12 @@ body.dark-mode .item {
     padding: 0;
   }
   #content {
-    top: 230px;
+    top: 190px;
   }
 }
 
 @media screen and (max-width: 440px) {
   #content {
-    top: 300px;
+    top: 260px;
   }
 }

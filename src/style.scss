@@ -500,7 +500,8 @@ body.dark-mode .item {
 		//width: 100%;
 
 		h1 {
-			line-height: 1.5;
+			line-height: 0.6;
+			font-size: 2rem;
 		}
 
 		.email-link {
@@ -514,12 +515,12 @@ body.dark-mode .item {
 	}
 
 	#content {
-		top: 230px;
+		top: 190px;
 	}
 }
 
 @media screen and (max-width: 440px) {
 	#content {
-		top: 300px;
+		top: 260px;
 	}
 }

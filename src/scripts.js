@@ -132,6 +132,8 @@ $(document).ready(function() {
 		}
 	});
 
+	$('[data-fancybox]').fancybox({});
+
 	$("img, video").lazyLoadXT();
 	$("img").on("lazyload", function() {
 		$isotope.isotope('layout');
